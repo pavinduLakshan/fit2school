@@ -24,3 +24,14 @@
 .container {
   padding-top: 30px;
 }
+
+.articleCont{
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 640px) {
+  .articleCont{
+    flex-direction: column;
+  }
+}

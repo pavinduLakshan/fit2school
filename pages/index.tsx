@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-import { Heading, Button } from "@chakra-ui/react"
+import { Heading, Button, Flex } from "@chakra-ui/react"
 import IntecsLogo from 'public/intecs_logo.png'
 import UomLogo from '../public/uom_logo.png'
 import Layout from "components/layout"
@@ -30,7 +30,7 @@ const Home: FunctionComponent<IProps> = ({ articles }) => {
             <Heading as="h3" size="md" style={{color: "white",marginTop: "1%",marginBottom: "1%"}}>We open the door for the future IT masterminds</Heading>
             <Heading as="h5" width={["80%","40%","40%"]} size="sm" style={{color: "white",lineHeight: 1.5}}>
                 A community project by the students and the alumni of the Faculty of Information Technology, University of Moratuwa to make IT knowledge accessible
-                in native languages
+                in native languages to the Sri Lankans
            </Heading>
             
             <Button style={{marginTop: "1.5%"}} colorScheme="teal" size="lg">Explore catalog</Button>
@@ -39,7 +39,7 @@ const Home: FunctionComponent<IProps> = ({ articles }) => {
         </div>
           <div style={{display: "flex",flexDirection: "column",alignItems: "center",justifyContent: "center"}}>
             <Heading as="h3" style={{marginTop: "1%",marginBottom: "1%"}}>Latest posts</Heading>
-            <div style={{display: "flex",flexDirection: "row"}}>
+            <div className={styles.articleCont}>
             {articles.map((article, i) => (
               <Card key={i} article={article} />
             ))}

@@ -9,11 +9,9 @@
 }
 
 .imageCont {
-  width: 20%;
   padding-top: 1%;
   height: 20vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 

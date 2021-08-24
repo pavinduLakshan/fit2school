@@ -37,6 +37,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <>
       <Box
         w="100vw"
+        zIndex={10}
         position="fixed"
         bg={useColorModeValue("gray.100", "gray.200")}
         px={4}
@@ -63,9 +64,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
           </HStack>
 
           <Flex alignItems={"center"} mr={4}>
-            <Select placeholder="Select Language" bg="gray.300" color="white">
-              <option value="si">Sinhala</option>
-              <option value="ta">Tamil</option>
+            <Select placeholder="" size="sm" bg="gray.300" color="white">
+              <option value="si" selected>සිංහල</option>
+              <option value="ta">தமிழ்</option>
             </Select>
           </Flex>
         </Flex>

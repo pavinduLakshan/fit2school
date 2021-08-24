@@ -10,7 +10,9 @@ interface IProps {
 const Card: FunctionComponent<IProps> = ({ article }) => {
     return <Link href={`/article/${article.slug}`}>
         <div className={styles.card}>
-            <img src={article.thumbnail} />
+            <div>
+            <img src={article.thumbnail} height="150" width="150"/>
+            </div>
 
             <div className={styles.info}>
                 <h1>{article.title}</h1>

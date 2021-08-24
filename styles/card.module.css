@@ -13,13 +13,9 @@
 }
 
 .card:hover{
-	width: 320px;
-	height: 420px;
+	width: 310px;
+	height: 410px;
 	margin: 10px;
-}
-
-.card:hover .info {
-	padding: 20px 30px;
 }
 
 .card img{

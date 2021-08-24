@@ -1,8 +1,28 @@
-.container{
+.intro {
+  min-height: 89.5vh;
+  background-image: url('../public/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  width: 100%;
-  padding: 20px;
+}
+
+.imageCont {
+  width: 20%;
+  padding-top: 1%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.intro_text{
+  margin-top: 1%;
+  padding: 0.5%;
+  margin-left: 0.5%;
+}
+
+.container {
+  padding-top: 30px;
 }

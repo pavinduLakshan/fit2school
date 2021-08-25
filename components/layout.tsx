@@ -2,22 +2,13 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
   Input,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   Select,
   useDisclosure,
   useColorModeValue,
-  Heading,
-  Stack,
+  Heading
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
 
@@ -37,7 +28,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <>
       <Box
         w="100vw"
-        zIndex={10}
+        zIndex={100}
         position="fixed"
         bg={useColorModeValue("gray.100", "gray.200")}
         px={4}
